@@ -1,0 +1,144 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		<div class="container bg-primary" id="main-page">
+				<img src="cloud.jpg" width="200" height="150" style="margin-left: 200px; margin-top: -200px" id="cloud1"> 
+				<img src="cloud.jpg" width="200" height="150" style="margin-left: 550px; margin-top: -200px" id="cloud2">
+				<img src="cloud.jpg" width="200" height="150" style="margin-left: 750px; margin-top: -200px"id="cloud3">
+				<img src="cloud.jpg" width="200" height="150" style="margin-left: 450px; margin-top: -200px" id="cloud4"> 
+				<img src="cloud.jpg" width="200" height="150" style="margin-left: 550px; margin-top: -200px" id="cloud5">
+				<img src="cloud.jpg" width="200" height="150" style="margin-left: 250px; margin-top: -200px"id="cloud6">
+			<!--OWL-->
+			<div class="owl-body">
+				
+				<div class="row">
+					<div class="col-md-6 left-ear">
+					</div>
+					<div class="col-md-6 right-ear">
+					</div>
+				</div>
+				
+				<div class="eyes">
+					<div class="row">
+						<div class="left-eye col-md-5">
+							<div class="eyelid-left">
+							</div>
+							<div class="pupil">
+							</div>
+						</div>
+						<div class="col-md-2 nose">
+						</div>
+						<div class="right-eye col-md-5">
+							<div class="eyelid-right">
+							</div>
+							<div class="pupil">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 left-wing">
+						</div>
+						<div class="col-md-6 right-wing">
+						</div>
+					</div>
+					<div class="stomach">
+						<div class="row ">
+							<div class="freckles1 col-md-4 ">
+							</div>
+							<div class="freckles2 col-md-4">
+							</div>
+							<div class="freckles3 col-md-4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="freckles5 col-md-4">
+							</div>
+							<div class="freckles6 col-md-4">
+							</div>
+							<div class="freckles7 col-md-4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="freckles8 col-md-6">
+							</div>
+							<div class="freckles9 col-md-6">
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="left-finger1">
+							</div>
+							<div class="left-finger2">
+							</div>
+							<div class=" left-finger3">
+							</div>
+						</div>
+						<div class="col-md-6 ">
+							<div class="right-finger1">
+							</div>
+							<div class="right-finger2">
+							</div>
+							<div class="right-finger3">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--END OF OWL-->
+			
+		</div>
+		<!--jQuery-->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
+			<!--My script-->
+			<script>
+				$(document).ready(() => {
+					$( "#cloud2" ).slideDown( "slow", function() {
+						// Animation complete.
+					});
+					var x = 0;
+					var y = 0;
+					$( window).keydown(function(e) {
+						if(e.keyCode == 37) {
+							x+=20;
+							console.log("Levo")
+							$('.owl-body')
+							.css({'position':'relative',
+								'right':+x+'px'
+								})
+								
+						}else if(e.keyCode == 39) {
+							x-=20;
+							console.log("Levo")
+							$('.owl-body')
+							.css({'position':'relative',
+								'right':+x+'px'
+								})      
+						}else if(e.keyCode == 38) {
+							y+=20;
+							console.log("Levo")
+							$('.owl-body')
+							.css({'position':'relative',
+								'bottom':+y+'px'
+								}) 
+						}else if(e.keyCode == 40) {
+							y-=20;
+							console.log("Levo")
+							$('.owl-body')
+							.css({'position':'relative',
+								'bottom':+y+'px'
+								}) 
+						}
+					});
+			})
+			
+			</script>
+	</body>
+</html>
