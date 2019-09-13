@@ -1,10 +1,13 @@
+/* BODY BACKGROUND COLOR */
 body {
-	background-color: #0E9ABB
+	background-image: url('treeTexture.jpg')
 }
+/* MAIN CONTAINER ATTRIBUTES */
 .container {
 	height:100%;
 	background-color: #0E9ABB
 }
+/* OWL BODY */
 .owl-body {
 	margin:auto;
 	margin-top:200px;
@@ -13,11 +16,12 @@ body {
 	height:200px;
 	border-radius:40% 40% 50% 50%;
 }
-
+/* OWL BODY ON HOVER ANIMATION */
 .owl-body:hover {
 	transition-duration: 2s;
 	transform: rotate(360deg)
 }
+/* EYES */
 .left-eye {
 	margin-left:40px;
 	margin-top:10px;
@@ -38,6 +42,7 @@ body {
 	position:relative;
 	right:5px;
 }
+/* EYELIDS */
 .eyelid-left, .eyelid-right {
 	width:40px;
 	height:40px;
@@ -52,7 +57,7 @@ body {
 	animation-timing-function: ease-in;
 	animation-direction:alternate 
 }
-
+/* PUPIL */
 .pupil {
 	background-color:black;
 	width:30px;
@@ -68,6 +73,7 @@ body {
 	animation-timing-function: ease-in;
 	animation-direction:alternate 
 }
+/* NOSE */
 .nose {
     width: 0;
     height: 0;
@@ -79,6 +85,7 @@ body {
 	border-radius: 50% 50% 50% 50%;
 	margin-bottom:0;
 }
+/* STOMACH */
 .stomach {
 	margin-bottom:10px;
 	width:110px;
@@ -89,6 +96,7 @@ body {
 	position:relative;
 	bottom:14px;
 }	
+/* FRECKLES */
 .freckles1 {
 	width:8px;
 	height:8px;
@@ -116,7 +124,6 @@ body {
 	border-radius:50% 50%;
 	background-color:#fabd43;
 }
-
 .freckles5 {
 	width:5px;
 	height:8px;
@@ -163,6 +170,7 @@ body {
 	border-radius:50% 50%;
 	background-color:#fabd43;
 }
+/* EARS */
 .left-ear {
 	
 	width: 30px;
@@ -171,8 +179,6 @@ body {
 	margin-left:38px;
 	transform:rotate(20deg);	
 }
-
-
 .right-ear {
 	width: 30px;
 	height: 35px;
@@ -180,6 +186,7 @@ body {
     margin-left:94px;
 	transform:rotate(-20deg);
 }
+/* WINGS */
 .left-wing {
 	background-color:#fabd43;
 	width:60px;
@@ -209,6 +216,7 @@ body {
 	animation-iteration-count: infinite;
 	animation-direction:alternate ;
 }
+/* TOES */
 .left-finger1 {
 	background-color:darkOrange;
 	height:15px;
@@ -237,7 +245,6 @@ body {
 	bottom:60px;
 	left:55px;
 }
-
 .right-finger1 {
 	background-color:darkOrange;
 	height:16px;
@@ -266,7 +273,7 @@ body {
 	bottom:62px;
 	left:22px;
 }
-
+/* CLOUD OBJECTS */
 #cloud1 {
 	opacity:0.4;
 	animation-name:cloud1;
@@ -315,7 +322,33 @@ body {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in;
 }
-
+/* BRANCH */
+#branch1 {
+	color: rgb(75, 48, 37);
+	background-color: rgb(75, 48, 37);
+	max-width:200px;
+	max-height:30px;
+	position:absolute;
+	right:100px;
+	animation-name: branch1;
+	animation-duration:3s;
+	animation-iteration-count:120;
+	animation-timing-function: ease-in
+}
+#branch2 {
+	color: rgb(75, 48, 37);
+	background-color: rgb(75, 48, 37);
+	width:300px;
+	max-height:30px;
+	position:absolute;
+	right:60%;
+	animation-name: branch2;
+	animation-duration:3s;
+	animation-delay:1s;
+	animation-iteration-count:120;
+	animation-timing-function: ease-in
+}
+/* WINGS ANIMATION */
 @keyframes left-wing-animation {
 	from {transform:rotate(-30deg);}
 	to {transform:rotate(30deg);}
@@ -324,7 +357,7 @@ body {
 	from {transform:rotate(30deg);}
 	to {transform:rotate(-30deg);}
 }
-
+/* EYELID ANIMATION */
 @keyframes eyelid-animation {
 	0% {
 		width:40px;
@@ -339,7 +372,7 @@ body {
 		right:15px;
 	}
 }
-
+/* PUPIL ANIMATION */
 @keyframes pupil-animation {
 	0% {
 		background-color:black;
@@ -356,28 +389,37 @@ body {
 		height:30px;
 	}
 }
-
+/* CLOUD ANIMATIONS */
 @keyframes cloud1{
-	0% {margin-left: 100px; margin-top: -200px; position:absolute;opacity:0.4;}
-	100% {margin-left: 100px; margin-top: 800px;position:absolute;opacity:0;}
+	0% {margin-left: 150px; margin-top: -250px; position:absolute;opacity:0.4;}
+	100% {margin-left: 150px; margin-top: 150%;position:absolute;opacity:0;}
 }
 @keyframes cloud2{
-	0% {margin-left: 450px; margin-top: -200px; position:absolute;opacity:0.4}
-	100% {margin-left: 450px; margin-top: 800px;position:absolute;opacity:0;}
+	0% {margin-left: 450px; margin-top: -250px; position:absolute;opacity:0.4}
+	100% {margin-left: 450px; margin-top: 150%;position:absolute;opacity:0;}
 }
 @keyframes cloud3{
-	0% {margin-left:750px; margin-top: -200px; position:absolute;opacity:0.4}
-	100% {margin-left: 750px; margin-top: 800px;position:absolute;opacity:0;}
+	0% {margin-left:650px; margin-top: -250px; position:absolute;opacity:0.4}
+	100% {margin-left: 650px; margin-top: 150%;position:absolute;opacity:0;}
 }
 @keyframes cloud4{
-	0% {margin-left: 450px; margin-top: -200px; position:absolute;opacity:0.4;}
-	100% {margin-left: 500px; margin-top: 800px;position:absolute;opacity:0;}
+	0% {margin-left: 250px; margin-top: -250px; position:absolute;opacity:0.4;}
+	100% {margin-left: 250px; margin-top: 150%;position:absolute;opacity:0;}
 }
 @keyframes cloud5{
-	0% {margin-left: 550px; margin-top: -200px; position:absolute;opacity:0.4}
-	100% {margin-left: 600px; margin-top: 800px;position:absolute;opacity:0;}
+	0% {margin-left: 600px; margin-top: -250px; position:absolute;opacity:0.4}
+	100% {margin-left: 600px; margin-top: 150%;position:absolute;opacity:0;}
 }
 @keyframes cloud6{
 	0% {margin-left: 250px; margin-top: -200px; position:absolute;opacity:0.4}
-	100% {margin-left: 300px; margin-top: 800px;position:absolute;opacity:0;}
+	100% {margin-left: 300px; margin-top: 150%;position:absolute;opacity:0;}
+}
+/* BRANCH ANIMATION */
+@keyframes branch1 {
+	0% {margin-top:-100px;}
+	100% {margin-top:150%}
+}
+@keyframes branch2 {
+	0% {margin-top:-100px;}
+	100% {margin-top:150%}
 }
